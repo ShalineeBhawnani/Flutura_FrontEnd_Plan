@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iframes Gallery</title>
+</head>
+<body>
+<h2>Iframes</h2>
+<!-- target for openning file in side frame -->
+<a href=galary.html target="WebFrame">WebFrame</a>
+<br>
+<!--Iframes display a web page within a web page-->
+<!-- name attribute -->
+<iframe title="Iframe Web Example" width="400px" height="300px" name="WebFrame"></iframe>
+<br>
+<iframe src="ok.jpg" title="Iframe Gallery"></iframe>
+
+<!-- sordoc attribute -->
+<iframe srcdoc="<h1>src doc example</h1>" title="Iframe Gallery" ></iframe>
+
+<!-- sandbox attribute -->
+<iframe src="galary.html" width="300px" height="300px" sandbox="allow-same-origin"></iframe>
+</body>
+</html>
