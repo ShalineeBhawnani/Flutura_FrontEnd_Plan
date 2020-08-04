@@ -1,0 +1,22 @@
+
+#myHeader {
+  background-color:olive;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+#myBody {
+    background-color: tomato;
+    color: white;
+}
+.myHeader {
+    background-color: violet;
+    padding: 20px;
+}
+#mypara1  {
+  color:red;
+}
+#mypara2  {
+  color:blue;
+}
