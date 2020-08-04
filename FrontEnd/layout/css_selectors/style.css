@@ -1,0 +1,23 @@
+h2{
+    color: purple
+}
+#para1
+{
+    color: red;
+}
+#para2{
+    color: royalblue;
+}
+h1.myClass {
+    color: olive;
+}
+p.myClass {
+    color: blueviolet;
+}
+.center
+{
+    text-align: center;
+}
+h4, #para3 {
+    color: yellow;
+}
