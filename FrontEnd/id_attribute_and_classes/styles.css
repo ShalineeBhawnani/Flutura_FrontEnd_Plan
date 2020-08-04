@@ -20,3 +20,11 @@
 #mypara2  {
   color:blue;
 }
+
+#main {
+  color:red;
+  padding: 20px;
+}
+.myClass {
+  color:orangered
+}
