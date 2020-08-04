@@ -1,0 +1,15 @@
+#firstdiv{
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+    padding-left: 70px;
+    float: left;
+}
+#secdiv{
+    background-color: pink;
+    width: 200px;
+    height: 100px;
+    float: left;
+
+}
