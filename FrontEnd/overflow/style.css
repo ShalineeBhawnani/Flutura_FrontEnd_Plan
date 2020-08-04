@@ -1,0 +1,23 @@
+#para1 {
+    background-color:olive;
+    width: 200px;
+    height: 150px;
+    overflow: visible;
+  }
+
+#para2 {
+    background-color: orange;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+}
+
+div {
+    background-color:pink;
+    width: 200px;
+    height: 150px;
+    border: 1px dotted black;
+    /* overflow: scroll; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
