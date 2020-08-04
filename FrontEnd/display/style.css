@@ -1,0 +1,22 @@
+/* It starts on a new line, and takes up the whole width */
+
+#firstdiv {
+    display: block;
+    background-color:yellow;
+}
+ /* cant have width & height */
+#firstspan {
+    display: inline;
+    background-color: green;
+}
+ /* can change width & height */
+#secondspan {
+    display:inline-block;
+    background-color: pink;
+    width:100px;
+}
+/* completely hide */
+#thiredspan {
+    display: none;
+    background-color: blue;
+}
