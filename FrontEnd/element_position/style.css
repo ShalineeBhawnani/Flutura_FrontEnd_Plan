@@ -1,0 +1,26 @@
+.parent {
+    padding: 15px;
+    background-color:olive;
+}
+.child {
+    padding: 10px;
+  }
+  /* relative allows position to change */
+.child-one {
+    background-color: pink;
+    position: relative;
+    /* left:10px;
+    top:10px; */
+}
+/* if you want to use absolute need to use it inside relative not to use static as parent */
+.child-two {
+    position: absolute;
+    left:70px;
+    background-color: yellow;
+}
+/* fixed in every condition stay in same place*/
+.child-three {
+    position: fixed;
+    background-color: red;
+
+}
