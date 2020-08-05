@@ -16,7 +16,7 @@
     background-color: rgb(219, 110, 110);
     color: white;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px;
   }
 .flex-nav-container {
@@ -24,12 +24,110 @@
     background-color: olive;
     justify-content: center;
 }
+.flex-nav-container1 {
+  display: flex;
+}
 .flex-nav-container  > div {
     background-color: rgb(219, 110, 110);
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 15px;
     color: white;
+  }
+  .flex-nav-container1 .flexthird {
+    background-color: rgb(219, 110, 110);
+    padding: 17px;
+    font-size: 17px;
+    margin: 15px;
+    color: white;
+    width: 10%;
+  }
+  .flex-nav-container1 .flexthree {
+    background-color: rgb(219, 110, 110);
+    padding: 20px;
+    font-size: 20px;
+    margin: 15px;
+    color: white;
+    width: 100%;
+  }
+  .flex-nav-container1 .flexfourth {
+    background-color: rgb(219, 110, 110);
+    padding: 20px;
+    font-size: 20px;
+    margin: 15px;
+    color: white;
+  }
+  .flex-nav-container1 .flex_nav {
+    background-color: rgb(219, 110, 110);
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: white;
+    width: 60%;
+  }
+  .flex-nav-container1 .flex_nav_bar {
+    background-color: rgb(219, 110, 110);
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: white;
+    width: 98%;
+  }
+  .flex-nav-container1 .flex_box1 {
+    background-color: rgb(219, 110, 110);
+    padding: 10px;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  .flex-nav-container1 .flex_box2 {
+    background-color: rgb(219, 110, 110);
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: white;
+    width: 80%;
+  }
+  .flex-nav-container1 .flex_box3 {
+    background-color: rgb(219, 110, 110);
+    padding: 10px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: white;
+    width: 14%;
+    margin-left: 85%;
+  }
+  .flex-nav-container1 .flex_box4 {
+    background-color: rgb(219, 110, 110);
+    padding: 10px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: white;
+    width: 100%;
+    margin-left: 15%;
+    margin-right: 15px;
+  }
+  .flex-nav-container1 .flex_box5 {
+    background-color: rgb(219, 110, 110);
+    padding: 10px;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: white;
+    width: 14%;
+  }
+  .flex-nav-container1 .flex_box6 {
+    background-color: rgb(219, 110, 110);
+    padding: 10px;
+    font-size: 17px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: white;
+    width: 85%;
   }
 .row {
       display: flex;
@@ -67,7 +165,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px;
-    font-size: 30px;
+    font-size: 15px;
   }
   .item1{
     grid-column: 1;
@@ -102,6 +200,39 @@
     grid-column: 3;
     grid-row: 4;
   }
+  .wrapper1{
+    display:grid;
+    grid-gap:1em;
+    background-color: #2196F3;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+  .grid-item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .item9{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .item10 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .item11 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .item12 {
+    grid-column: 4;
+    grid-row: 1;
+    
+  }
+
   /* Footer */
 .footer {
     padding: 20px;
