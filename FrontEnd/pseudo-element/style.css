@@ -5,3 +5,20 @@ p::first-letter {
 p::first-line {
   background-color: orange;
 }
+p::selection {
+  background-color: pink;
+}
+/* use in forms */
+::placeholder {
+   color:red;
+}
+p:hover::after {
+  content: "bye";
+  background-color: green;
+}
+p::before {
+  content: "hello";
+  background-color: orangered;
+  color: blue;
+  margin-bottom: 20px;
+}
