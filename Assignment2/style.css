@@ -28,34 +28,31 @@ h2 {
   margin-bottom: 10px;
 }
 #form {
-  width: 50%;
+  width: 70%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: rgb(192, 211, 229);
   opacity: 0.7;
-  
 }
 form {
   margin: 0 auto;
 }
 #message_box{
-  height: 100px;
+  height: 250px;
 }
 input[type=text], select {
     width: 45%;
     padding: 7px;
     box-sizing: border-box;
     margin-bottom: 16px;
-    margin-top: 10px;
+    margin-top: 40px;
     
   }
-  .number{
-    margin-left: 40px;
-  }
+ 
   input[type=text], textarea {
-    width: 70%;
+    width: 80%;
     padding: 12px;
     box-sizing: border-box;
   }
@@ -65,16 +62,35 @@ input[type=text], select {
     padding: 12px 18px;
     border: none;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-bottom: 25px;
   }
 
   #form .underline {
     text-decoration: underline;
-    margin-left: 65px;
+    margin-left: 90px;
   }
   #submit_span {
     text-decoration: underline;
   }
   .formfield * {
     vertical-align: middle;
+  }
+  .number{
+    margin-left: 70px;
+  }
+  .message_boxs
+  {
+    margin-left:30px;
+  }
+    
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
   }
