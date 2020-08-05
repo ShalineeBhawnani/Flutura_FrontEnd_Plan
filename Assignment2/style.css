@@ -84,6 +84,14 @@ input[type=text], select {
   {
     margin-left:30px;
   }
+  .messages_container{
+    border: 2px solid #f0d6d6;
+    background-color: gray;
+    padding: 15px;
+    margin: 10px;
+    width: 98%;
+    text-align: center;
+  }
   .chat_container {
     border: 2px solid #f0d6d6;
     background-color: lightcyan;
@@ -103,3 +111,9 @@ input[type=text], select {
     margin-left: 80%;
     color: #aaa;
   }
+label {
+  display: block;
+}
+#message{
+margin-left: 10px;
+}
