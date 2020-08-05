@@ -1,0 +1,17 @@
+ /* descendant selector  */
+div p {
+    background-color:pink;
+  }
+  /* Child Selector */
+div > p {
+background-color: yellow;
+}
+/* Adjacent Sibling Selector */
+div + p {
+    background-color:red;
+  }
+  /* General Sibling Selector */
+
+div ~ p {
+    background-color: lawngreen;
+}
