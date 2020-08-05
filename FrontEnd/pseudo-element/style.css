@@ -1,4 +1,7 @@
+p::first-letter {
+  color:yellow;
+  font-size: 20px;    
+}
 p::first-line {
-    color: blue;
-    font-variant: small-caps;
-  }
+  background-color: orange;
+}
