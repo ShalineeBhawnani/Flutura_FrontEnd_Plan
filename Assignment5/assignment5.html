@@ -6,16 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="assignment4.js"></script>
+    <script src="assignment5.js"></script>
     <title>Agency</title>
 </head>
 <body>
     <!-- Main Content -->
     <div class="container">
-        <!-- Header -->
-        <!-- <div class="header"> -->
-            <ul class="form-flex">
-                <li class="flex-item1"> 
+      
+            <ul class="flex-container">
+                <li class="flex-item"> 
                     <a href="#"><i class="fa">&#xf003;</i>  admin@gmail.com</a> 
                 </li>
                 <li class="flex-item"> 
@@ -36,22 +35,41 @@
                 <li class="flex-item">
                     <a><i class="fa">&#xf27d;</i></a>
                 </li>
-                <button class="dropbtn">English 
+                <button class=" flex-item dropbtn">English 
                     <i class="fa fa-caret-down"></i>
                 </button>
-                <button class="get-quote">Get a Quote</button>
-
+                <button class="flex-item get-quote">Get a Quote</button>
             </ul>
-        </div>
-
-        <!-- Hero -->
         <section>
-            Hero
+            <!-- <div class="slider"> -->
+                <div class="img-box">
+                    <img class="slider-img" src="images/website1.jpeg" >
+                    <button class="btn prev-btn" onclick="prev()">Prev</button>
+                    <button class="btn next-btn" onclick="next()">Next</button>
+                </div> 
+            <!-- </div> -->
+            <script src="assignment5.js"></script>
         </section>
 
         <!-- Content -->
         <section>
-            Content
+            <div class="project-flex-container">
+                <div class="flex-items">
+                  <h3>Fixed Price Project</h3>
+                  <p>Out believe has request not how dety cof ort evident cousins we</p>
+                  <P>ort evident cousins we</P>
+                </div>
+                <div class="flex-items">
+                  <h3>Recieve On Time</h3>
+                  <p>Out believe has request not how dety cof ort evident cousins we</p>
+                  <P>ort evident cousins we</P>
+                </div>
+                <div class="flex-items">
+                  <h3>Satisfaction Guranted</h3>
+                  <p>Out believe has request not how dety cof ort evident cousins we</p>
+                  <P>ort evident cousins we</P>
+                </div>
+              </div>
         </section>
 
         <!-- Sidebar -->
@@ -63,7 +81,6 @@
         <footer>
             Footer
         </footer>
-
-    </main>
+    </div>
 </body>
 </html>

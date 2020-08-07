@@ -5,9 +5,10 @@
   }
   body {
       margin: 0;
-      /* min-height: 100%; */
+      min-height: 100%;
       font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;   
-      overflow-y: scroll;
+      max-width: 100%;
+      overflow-x: hidden;
       
   }
   .container {
@@ -16,7 +17,7 @@
     
   }
 
-.form-flex
+.flex-container 
  {  
     width: 100%;
     background-color: rgb(255, 40, 58);
@@ -26,12 +27,17 @@
     justify-content: space-evenly;
     
 }
-.form-flex li, a, button{
+/* .flex-container  li, a, button{
     display: inline-block;
     color: white;
     text-decoration:none;
+     */
     
-}
+/* } */
+.flex-item {
+    width: 100px;
+    margin: 10px;
+  }
 .dropbtn {
     font-size: 16px;  
     border: none;
@@ -48,3 +54,71 @@
     background-color: white;
 
 }
+
+/* .slider{
+	margin:0 auto;
+	width:100%;
+} */
+.img-box
+{
+    position: relative;
+    width:100%;
+}
+.img-box img{
+	width:100%;
+}
+
+.img-box .btn{
+    position: absolute;
+	border:none;
+	outline:none;
+	background:#65605e;
+	padding:10px;
+	font-size: 20px;
+	color:#ddd;
+    cursor: pointer;
+    top: 50%;
+}
+.img-box .prev-btn{
+    right: 95%;
+}
+.img-box .next-btn{
+    left: 95%;
+}
+/* @media(max-width:786px){
+    .img-box .prev-btn{
+        right: 85%;
+    }
+    .img-box .next-btn{
+        left: 85%;
+    }
+} */
+@media(max-width:500px){
+    .img-box .prev-btn{
+        right: 80%;
+    }
+    .img-box .next-btn{
+        left: 80%;
+    }
+}
+
+.btn:hover{
+	background: #111;
+}
+
+.project-flex-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-items {
+    /* position: absolute; */
+    background: red;
+    padding: 20px;
+    width: 20%;
+    height: 150px;
+    font-size: 1em;
+    text-align: center;
+  }
