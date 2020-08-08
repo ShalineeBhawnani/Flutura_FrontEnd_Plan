@@ -122,12 +122,18 @@
   .flex-items {
 
     background: rgb(236, 228, 228);
+    border-right: 1px solid #999;
     padding: 20px;
     font-size: 0.9em;
     max-width: 20%; 
     height: 50%;
     text-align: center;
+    
   } 
+
+  .item {
+     border: none; 
+  }
 }
   a {
     color: white;
@@ -148,6 +154,7 @@
     list-style: none;
     flex: 0 1 50%;
     display: inline;
+
     /* padding-left: 1%; */
     
   }
@@ -184,6 +191,7 @@
   @media (min-width: 1300px) {
     nav {
         flex: 0 1 25%;
+        
     }
   }
 
@@ -209,6 +217,7 @@
     color: white;
     margin-top: 170px;
     margin-left: 170px;
+    
   }
   /* The navbar */
   .topnav {
@@ -229,8 +238,19 @@
     color: rgb(255, 40, 58);
     
   }
+  .white-bar {
+    margin-top: 20%;
+    margin-bottom: 8%;
+  }
+  .service p,h1{
+    text-align: center;
+  }
+  .service {
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
 .white-bar p{
-    /* padding: 5%; */
+
     text-align: center;
 }
 .pro-container { 
@@ -242,6 +262,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    
 }
   .image .imgs{
     width: 100%;
@@ -274,12 +295,9 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 70%;
     margin-top: 6px;
     cursor: pointer;
-  }
-  .sign {
-    
   }
   .sign img{
     width: 30%;
@@ -287,4 +305,48 @@
   }
 .sign h4, .p{
     margin-left: 69%;
+}
+
+.service-container { 
+    display: flex;
+    background-color: #f1f1f1;
+    }
+.service-container div {
+    width: 50%;
+    font-size: 1vw;
+    padding: .7em;
+    color: white;
+    /* flex: 1; */
+    }
+.service_content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+}
+.service_content div {
+    width: 35%;
+    height: 35%;
+    font-size: 1vw;
+    padding: .7em;
+    color: white;
+    /* flex: 1; */
+    }
+.development
+{
+    background-color: #f4655f;
+}
+.support {
+    background-color:rgb(239, 239, 239)
+}
+.marketing{
+    background-color:rgb(239, 239, 239)
+}
+.insurenece{
+    background-color:rgb(239, 239, 239)
+}
+.service_content h3{
+    color: black;
 }
