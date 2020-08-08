@@ -30,36 +30,27 @@
     color: black;
     padding: 4px 8px;
     background-color: white;
-
 }
 
 .btn{
     position: absolute;
-	border:none;
+	border: 1px solid white; 
+    background-color: transparent; 
 	outline:none;
-	background:#65605e;
-	padding:10px;
-	font-size: 20px;
-	color:#ddd;
+	padding:1%;
+	font-size: 0.7em;
+	color:white;
     cursor: pointer;
     top: 40%;
+    opacity: 0.7;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
-.bg-img {
-
-    background-image: url("/images/website1.jpeg");
-    min-height: 380px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-  }
 
 .prev-btn{
-    right: 94.5%;
+    right: 94%;
 }
 .next-btn{
-    left: 93%;
+    left: 94%;
 } 
 @media(max-width:500px){
     .img-box .prev-btn{
@@ -93,6 +84,7 @@ a {
     list-style: none;
     flex: 0 1 50%;
     display: inline;
+    margin-left: 3%;
   }
 
   @media (min-width: 550px) {
@@ -130,7 +122,6 @@ a {
         
     }
   }
-
   /* Position the navbar container inside the image */
   .topnav {
     position: absolute;
@@ -142,7 +133,6 @@ a {
     text-align: center;
     color: white;
     margin-top: -18%;
-    /* margin-left: 10%; */
     
   }
   /* The navbar */
@@ -164,6 +154,9 @@ a {
     color: rgb(255, 40, 58);
     
   }
+  .topnav a:active {
+    color: rgb(255, 40, 58);;
+  }
   .service p,h1{
     text-align: center;
   }
@@ -172,7 +165,6 @@ a {
     margin-bottom: 6%;
   }
 .white-bar p{
-
     text-align: center;
 }
 .pro-container { 
@@ -316,8 +308,7 @@ h3:before{
     height: 100vh;
     overflow-x: hidden;  /* horizontal scrollbar disable */
     overflow-y: auto;
-    perspective: 2px;  
-    /* How far the element is placed from the view */
+    perspective: 2px;  /* How far the element is placed from the view */
   }
   .section { 
     position: relative;
@@ -326,6 +317,7 @@ h3:before{
     align-items: center;
     justify-content: center;
     color: white;
+    flex-wrap: wrap;
     text-shadow: 0 0 5px #000;
   }
   .parallax::after {
@@ -337,17 +329,81 @@ h3:before{
     left: 0;
     transform: translateZ(-1px) scale(1.5);
     background-size: 100%;
-    z-index: -1;
+    z-index: -1;       /* it will be placed behind the content */
+  
   }
   .flex-items {
 
     background: rgb(236, 228, 228);
     padding: 15px; 
-    max-width: 20%;
+    max-width: 22%;
     margin-top: 48%;
     font-size: 1em;
     text-align: center;
+
     /* position: absolute; */
+    }
+    .flex-items h3 {
+        color: black;
+    }
+ @media(max-width:320px){
+    .topnav {
+        display: none;
+    }
+    .content {
+        position: absolute;
+        color: white;
+        margin-top: -100%;
+        margin-left: 3%;
+        
+      }
+      .contact .flex-item{
+     margin: 0;
+     /* width: 20px; */
+   
+      }
+      .prev-btn{
+        right: 87%;
+    }
+    .next-btn{
+        left: 87%;
+    } 
+    .dropbtn {
+        display: none;
+    
+      }
+    .get-quote {
+        display: none;
+    
+    }
+    .section { 
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        flex-wrap: wrap;
+        text-shadow: 0 0 5px #000;
+      }
+    .flex-items {
+
+        background: rgb(236, 228, 228);
+        padding: 15px;
+        max-width: 55%; 
+        font-size: 0.6em;
+        text-align: center;
+
+    }
+    .flex-items i {
+        font-size:3px;
+        color:red;
+        display: block;
+        margin-bottom: 4%;
+    }
+}
+    .flex-items h3{
+        margin: 10px;
     }
 .flex-items i {
     font-size:24px;
@@ -356,10 +412,59 @@ h3:before{
     margin-bottom: 4%;
 }
 
-
-/* .static {
-    background: white;
-  } */
   .bg1::after {
-    background-image: url('https://placekitten.com/g/900/700');
+    background-image: url('/images/web2.jpg');
   }
+span {
+    color: white;
+}
+
+.choose-area{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    /* align-items: center; */
+}
+.choose-title{
+padding-left: 6.5%;
+padding-top: 3%;
+margin-top: 10%;
+background-color: #f1f1f1;
+}
+.choose-area div {
+    width: 80%;
+    font-size: 1vw;
+    background-color:#f1f1f1;
+
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        justify-items: center;
+        
+    }
+    .container1 div {
+        width: 80%;
+        max-height: 100%;
+        font-size: 1.2vw;
+        padding: 2em;
+        text-align: start;
+    
+        }
+.image img{
+    
+    width: 80%;
+}
+
+.container1 i{ 
+    background-color: red;
+    color: white; 
+    padding: 2%;
+    margin-bottom: 1%;
+} 
+.container1 h4 {
+    margin-bottom: 1.5%;
+}
