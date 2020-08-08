@@ -525,7 +525,55 @@ input[type=email]{
 
   .project-had{
     text-align: center;
-    margin: 10%;
-    padding: 1%;
+    margin: 3%;
+    padding: 4%;
 
+  }
+  .project-had p{
+    margin-top: 3%;
+  }
+  .project-container {
+    text-align: center;
+  }
+  .buttons {
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+
+  }
+
+.button1 {
+    border: none;
+    background-color: #f55650;
+    color: white;
+} 
+.button2 {
+   
+    background-color: white;
+    color: black;
+}
+
+
+/* grid container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    /* grid-gap: 30px; */
+    background-color: white;
+    padding: 10px;
+    justify-content:space-around;
+  
+  }
+  .inner-grid {
+    display: grid;
+    justify-content: center;
+  }
+ 
+  .inner-grid img{
+    max-width: 100%;
+    max-height: 100%;
   }
