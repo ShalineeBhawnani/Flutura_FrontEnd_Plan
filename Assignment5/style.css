@@ -237,7 +237,6 @@
     display: flex;
     background-color: #f1f1f1;
     flex-direction: row-reverse;
-    color: black;
     }
 .contents {
     display: flex;
@@ -249,7 +248,11 @@
     height: 100%;
   }
   .our-work {
-    background: steelblue;
+    background: white;
+    
+  }
+  .our-work p{
+    color: black;
   }
   .pro-container div {
     width: 50%;
@@ -258,8 +261,30 @@
     color: white;
     /* flex: 1; */
   }
-  .about-us h3,h4{
+  .about-us h3,h4,p{
 
       color: black;
       
   }
+  .button{
+    background-color: #f4655f;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+  .sign {
+    
+  }
+  .sign img{
+    width: 30%;
+    float: right;
+  }
+.sign h4, .p{
+    margin-left: 69%;
+}
