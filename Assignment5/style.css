@@ -210,6 +210,7 @@ a {
     font-size: 70%;
     margin-top: 6px;
     cursor: pointer;
+    
   }
   .sign img{
     width: 30%;
@@ -514,12 +515,12 @@ input[type=email]{
     height:50px;
     width: 30%;
     font-size:14px;
-    padding: 10px;
+    padding: 8px;
     border:none;
     background-color: transparent;
     background-color:#383435;
     border-radius:0px 10px 10px 0px;
-    color: white;
+    color: rgb(224, 209, 209);
 
   }
 
@@ -536,13 +537,14 @@ input[type=email]{
     text-align: center;
   }
   .buttons {
-    padding: 15px 30px;
+    padding: 4px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
     margin-left: 10px;
+    margin-bottom: 10px;
 
   }
 
@@ -557,23 +559,34 @@ input[type=email]{
     color: black;
 }
 
-
-/* grid container */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    /* grid-gap: 30px; */
-    background-color: white;
-    padding: 10px;
-    justify-content:space-around;
-  
-  }
-  .inner-grid {
-    display: grid;
-    justify-content: center;
-  }
+.row {
  
-  .inner-grid img{
-    max-width: 100%;
-    max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center; 
+  justify-content: center;
+  
+}
+.column {
+  flex: 33.33%;
+  max-width: 20%;
+  padding: 0 4px;
+  background-color: #ffffff;
   }
+
+.column img {
+  margin-top: 8px;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.read-button {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:1%;
+  margin-bottom:0%
+
+}
