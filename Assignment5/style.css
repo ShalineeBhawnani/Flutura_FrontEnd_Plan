@@ -303,15 +303,26 @@ h3:before{
 .image .imgss {
     width: 68%;
 }
-
+.white-bar {
+  margin-bottom: -20%;
+}
 /* paralax */
 .wrapper {
     height: 100vh;
     overflow-x: hidden;  /* horizontal scrollbar disable */
     overflow-y: auto;
     perspective: 2px;  /* How far the element is placed from the view */
-  }
+  }  
   .section { 
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   }
+ 
+  .flex-section { 
     position: relative;
     height: 100vh;
     display: flex;
@@ -347,61 +358,69 @@ h3:before{
     .flex-items h3 {
         color: black;
     }
- @media(max-width:320px){
-    .topnav {
-        display: none;
+ @media(max-width:600px){
+  .topnav {
+      display: none;
+  }
+  .content {
+      position: absolute;
+      color: white;
+      margin-top: -100%;
+      margin-left: 3%;
+      
     }
-    .content {
-        position: absolute;
-        color: white;
-        margin-top: -100%;
-        margin-left: 3%;
-        
-      }
-      .contact .flex-item{
-     margin: 0;
-     /* width: 20px; */
+    .contact .flex-item{
+    margin: 0;
+    /* width: 20px; */
+  
+    }
+    .prev-btn{
+      right: 87%;
+  }
+  .next-btn{
+      left: 87%;
+  } 
+  .dropbtn {
+      display: none;
+  
+    }
+  .get-quote {
+      display: none;
+  
+  }
+  .flex-section { 
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      /* flex-wrap: wrap; */
+      flex-direction: row;
+      text-shadow: 0 0 5px #000;
+      /* background-color: violet; */
+      padding: 1em;
+      margin-top: 50%;
+      
+    }
+  .flex-items {
+      /* position: absolute; */
+      flex: 1;
+      background: white;
+      border: 0.1em solid black;
+      padding: 1%;
+      max-width: 32%;
+      font-size: 0.6em;
+      text-align: center;
    
-      }
-      .prev-btn{
-        right: 87%;
-    }
-    .next-btn{
-        left: 87%;
-    } 
-    .dropbtn {
-        display: none;
-    
-      }
-    .get-quote {
-        display: none;
-    
-    }
-    .section { 
-        position: relative;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        flex-wrap: wrap;
-        text-shadow: 0 0 5px #000;
-      }
-    .flex-items {
 
-        background: rgb(236, 228, 228);
-        padding: 15px;
-        max-width: 55%; 
-        font-size: 0.6em;
-        text-align: center;
+  }
 
-    }
-    .flex-items i {
-        font-size:3px;
-        color:#f55650;
-        display: block;
-        margin-bottom: 4%;
-    }
+  .flex-items i {
+      font-size:3px;
+      color:#f55650;
+      display: block;
+      margin-bottom: 4%;
+  }
 }
     .flex-items h3{
         margin: 10px;
@@ -415,6 +434,9 @@ h3:before{
 
   .bg1::after {
     background-image: url('/images/web2.jpg');
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
   }
 span {
     color: white;
@@ -662,8 +684,6 @@ input[type=email]{
 width: 60%;
 
 }
-
-
 .footer-row {
  
   display: flex;

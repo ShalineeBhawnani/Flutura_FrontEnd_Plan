@@ -1,10 +1,11 @@
-var slider_img = document.querySelector('.slider-img');
-var images = ['website1.jpeg', 'website2.jpeg', 'website3.jpeg'];
+var slider_img = document.querySelector('.bg1');
+var images = ['web2.jpg', 'Master.jpg', 'lappy.jpg'];
 var i = 0;
 
 function prev(){
 	if(i <= 0) i = images.length;	
 	i--;
+	console.log("here",i)
 	return setImg();			 
 }
 
@@ -15,6 +16,11 @@ function next(){
 }
 
 function setImg(){
-	return slider_img.setAttribute('src', "images/"+images[i]);
+	console.log(images[i])
+	return slider_img.setAttribute('style', 'background-image: url("'+images[i]+'")');
+	// return slider_img.setAttribute('style', 'background-image: "images/"+images[i]);
+	// return slider_img.setAttribute('style', 'background-image: url("images/"+images[i]));
+	
+
 	
 }
