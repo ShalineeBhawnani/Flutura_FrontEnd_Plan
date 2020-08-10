@@ -690,3 +690,23 @@ width: 60%;
   width: 40%;
 
 }
+.footer-btn {
+  cursor: pointer; 
+  border: 2% solid #3498db; 
+  background-color: transparent; 
+  color: white; 
+  font-size: 0.9em; 
+  margin: 1%;
+  padding: 4px 6px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+}
+.footer-column .addess{
+  font-size: 0.8em;
+  color: white;
+  margin-top: 4%;
+}
+.footer-column span{
+  font-size: 0.8em;
+  color: white;
+  
+}
