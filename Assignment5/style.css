@@ -710,3 +710,17 @@ width: 60%;
   color: white;
   
 }
+.footer-column h3 {
+  position: relative;
+  line-height: 1.2em;
+  color: white;
+}
+
+.footer-column h3:before {
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 50px;
+  content: '';
+  border-bottom: 1px solid white;
+}
