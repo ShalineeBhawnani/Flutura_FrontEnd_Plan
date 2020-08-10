@@ -1,4 +1,10 @@
-button {
+button{
     padding: 15px;
     border-color: blue;
+    background-color: coral;
+    color: white;
+}
+.clothes {
+padding: 10px;
+background-color: cadetblue;
 }

@@ -22,7 +22,7 @@ btn.addEventListener('click', () => {
 // asynchronous
 console.log ('asynch block');
 let image;
-fetch('time.png').then((response) => {
+fetch('/time.png').then((response) => {
   console.log('fetching image & came here)')
   return response.blob();  //MIME-type
 }).then((myimage) => {
@@ -36,3 +36,13 @@ fetch('time.png').then((response) => {
   console.log('error on fetching image: ' + error.message);
 });
 
+// Sync callback
+function first(callback) {
+    callback();
+  }
+  first(() => { 
+      console.log('Hi i m first block'); 
+    });
+console.log("call this first")
+  
+// Async callback
