@@ -1,12 +1,10 @@
-function Person(first, last, age, gender) {
+var Mobile = function (mob_number) {
+  this.mob_number = mob_number;
+  this.price = 10000;
+};
+var sumsung = new Mobile('RealMe');
+console.log(sumsung)
 
-    // property and method definitions
- 
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.gender = gender;
-  }
-
-  let person1 = new Person('shalu', 'shalu', 24, 'gender', ['male', 'female']);
-  console.log(person1)
+// prototype
+sumsung.color = 'white';
+console.log(sumsung)
