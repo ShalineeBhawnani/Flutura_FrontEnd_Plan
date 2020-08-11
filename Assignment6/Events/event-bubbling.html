@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <!-- event passes from inner event target -->
+    <div id="bubble1">
+        <div id="bubble2">inner content</div>
+    </div>
+
+    <!-- Stop Event Bubbling  -->
+    <div id="bubble1">
+      <button id="bubble2" onclick="event.stopPropagation()">inner content</button>
+    </div>
+    <script src="events.js"></script>
+  </body>
+</html>
