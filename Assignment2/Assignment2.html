@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
+        <!-- header is usually located at the top of the website -->
         <header></header>
         <!-- defines a set of navigation links -->
         <nav>
             <p><strong>Textity</strong> Because Text Messanging Rocks</p>
             <a href="" >Logout!</a>
-            
         </nav>
         <h2>(212)555-1234</h2>
         <div class="anchor"><a href="" >what is this number?</a></div>
@@ -22,48 +22,60 @@
             <p class="formfield">
             <span class="message_boxs">Message: <textarea id="message_box"></textarea>
             <p class="underline">Attach a photo to this text message</p>
-            <input type="submit" value="Send Text Message"> Or, <span id="submit_span">schedule it for later delivery</span>
+            <input type="submit" value="Send Text Message"> Or, <span>schedule it for later delivery</span>
             </p>
         </form>
         <section>
+            <p class="Conversation">
+                <span class="buttons">
+                    <button class="button button1">Recent Conversation</button>
+                    <button class="button button2">All Conversations</button>
+                    <button class="button button2">Photos</button>
+                </span>
+                <span class="align-right"><a href="" >Change Password</a></span>
+            </p>
+            <hr>
+            <!-- <p class="Conversation">
+                <span>
+                <p><strong>(508)555-1234</strong><a href="" > Set a name for this number</a></p>
+                </span>
+                <span class="align-right"><a href="" ><strong>All Conversation</strong> </a></span>
+            </p> -->
+  
             <form action="" id="">
                 <div>
                     <label for="message">New Text Message:</label>
                     <input type="text" id="message" name="message">
-                    <input type="submit" value="Send Message"><span id="submit_span">Attach a photo or schedule it for later delivery</span>
+                    <input type="button" value="Send Message"><span id="submit_span">Attach a photo or schedule it for later delivery</span>
                 </div>
             </form>
+            
             <div class="messages_container">
                 <p>You have 1 messages scheduled for later delivery</p>
             </div>
-            <div>(508)555-1234<span class="day">  Today</span></div>
-            <div class="chat_container">
-                <p>Hello. How are you today?</p>
-            </div>
-            <div class="second_chat_screen">(508)555-1234<span class="day">  Today</span></div>
-            <div class="chat_container second">
-            <p>Hey! I'm fine. Thanks for asking!</p>
-            </div>
+            <div class="wrap">
+            <div class="chat-container">
 
-              <div>(508)555-1234<span class="day">  Yesterday</span></div>
-              <div class="chat_container">
-                <p>Sweet! So, what do you wanna do today?</p>
-              </div>
-              
-              <div class="second_chat_screen">(508)555-1234<span class="day">  Yesterday</span></div>
-              <div class="chat_container second">
-                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-              </div>
-              <div>(508)555-1234<span class="day">  About 3 Weeks Ago</span></div>
-              <div class="chat_container ">
-                <p>Sweet! So, what do you wanna do today?</p>
-              </div>
+                <div class="left"><p>(508)555-1234<span class="day">  Today</span></p></div>
+                <div class="bubble left"><p>Hello. How are you today? Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today?</p></div>
 
-              <div class="second_chat_screen">(508)555-1234<span class="day">  About 3 Weeks Ago</span></div>
-              <div class="chat_container second">
-                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-              </div>
-              
+                <div class="right"><p>You -(508)555-1234<span class="day">  Today</span></p></div>
+                <div class="bubble right"><p>Hey! I'm fine. Thanks for asking! Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today?</p></div>
+
+                <div class="left"><p>(508)555-1234<span class="day">  Yesterday</span></p></div>
+                <div class="bubble left"><p>Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today?</p></div>
+
+                <div class="right"><p>You -(508)555-1234<span class="day">  Yesterday</span></p></div>
+                <div class="bubble right"><p>very long messageSweet! So, what do you wanna do today? Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today?</p></div>   
+                
+                <div class="left"><p>(508)555-1234<span class="day">  About 3 Weeks Ago</span></p></div>
+                <div class="bubble left"><p>Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today?</p></div>  
+                
+                <div class="right"><p>You -(508)555-1234<span class="day">  About 3 Weeks Ago</span></p></div>
+                <div class="bubble right"><p>Sweet! So,Sweet! So, what do you wanna do today? Sweet! So, what do you wanna do today?what do you wanna do today? Sweet! So, what do you wanna do today?</p></div>
+                
+            </div>
+         </div>
         </section>
     </div>
 </body>
