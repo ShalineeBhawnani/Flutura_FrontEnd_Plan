@@ -186,7 +186,6 @@ VALUES
    
    ;
    
-   
   SELECT name,sal, grade
  FROM employee,salgrade
   WHERE grade between 1 and 2
@@ -464,3 +463,114 @@ CASE
     ELSE fail
 END
 from fellowship_candidates;
+
+
+logical operators:-
+select first_name,last_name,candidate_status
+    -> from fellowship_candidates
+    -> where first_name='geeta' or first_name='deepak';
+	
+spacial operators:-
+select candidate_id degree_name from candidate_qualification where other_training IN('jspider');
+
+null:-
+select candidate_id,degree_name from candidate_qualification
+    -> where aggr_per IS NULL;
+	
+not-null:-
+select candidate_id,degree_name from candidate_qualification where aggr_per IS NOT NULL;
+
+single row function:-
+upper:-
+select upper(first_name) from fellowship_candidates;
+
+lower:-
+select lower(first_name) from fellowship_candidates;
+
+initcap:-   This converts first letter of each word in the string to capital.
+select initcap("raja") from dual;
+
+length:-
+select length(first_name), last_name 
+from fellowship_candidates;
+
+concat:-
+select concat(first_name,'works')
+from fellowship_candidates;
+
+nested function:-
+select concat(first_name,concat('got aggregate ',aggr_per))
+from fellowship_candidates;
+
+replace:-
+
+select replace('alia','a','b')
+from dual;
+
+substring:-
+select substring ('brizlabe',1,3)
+from dual;
+
+Instring:-
+select instr('brizlabe','z',1,1)
+from dual;
+
+Reverse:-
+
+select reverse(last_name),first_name
+from fellowship_candidates;
+
+Number Function:-
+
+round(5.9)
+select round(5.9),round(5.5), round(4.4) from dual;
+
+o/p:- 6,6,4
+
+trunc:-
+select trunc(4.4),trunc(4.5),trunc(4.6)   //oracle
+from dual;
+o/p 4,4,4
+
+select rowid from fellowship_candidates;  //oracle
+
+rownum:-
+select rownum from fellowship_candidates;  //oracle
+
+datefunction:-
+select SYSDATE()
+from dual;
+
+SELECT SYSDATE() + 1
+from dual;
+
+select (SYSDATE()-hired_date)/365
+from fellowship_candidates;
+
+last_day:-
+select last_day(sysdate())
+from dual;
+
+to_char:-
+SELECT TO_CHAR(SYSDATE,'DD/MM/YYYY')    //oracle
+FROM DUAL;
+
+Multi Row Function:-
+count():-
+select count(first_name) from fellowship_candidates;
+
+max():-
+select max(aggr_per) from fellowship_candidates;
+
+avrage:-
+select avg(aggr_per) from fellowship_candidates;
+ 
+ sum:-
+ select sum(aggr_per)
+ from fellowship_candidates;
+ 
+ group by Statement:-
+ select avg(aggr_per),degree
+ from fellowship_candidates
+ group by degree;
+ 
