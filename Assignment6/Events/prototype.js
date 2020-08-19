@@ -16,7 +16,7 @@ console.log(nokia)
 
 //prototype
 // classname.prototype.key = 'value';
-Mobile.prototype.colors = 'pink'; //prototype mwmber
+Mobile.prototype.colors = 'pink'; //prototype member
 console.log("prototype",sumsung.colors)
 console.log("prototype",nokia.colors)
 

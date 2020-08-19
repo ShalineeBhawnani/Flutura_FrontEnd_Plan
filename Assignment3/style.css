@@ -10,7 +10,7 @@ header {
   background-color: black;
 }
 nav {
-padding: 10px;
+padding: 10%;
 }
 nav p {
     display: inline;
@@ -58,15 +58,13 @@ form {
   /* flex-wrap: wrap;
   flex-direction: row; */
   flex-flow: row wrap;
-  justify-content: center;
-  /*  aligns the items inside a flex container */
-  align-items: center;
+  justify-content: center; /*  aligns the grid */
+  align-items: center; /*  aligns the items inside a flex container */
 }
 .form-flex li label
  {
   padding: 8px;
-  font-weight: 300;
-  letter-spacing: .09em;
+  letter-spacing: .05em;  /* relating to font size of element */
 }
 .form-flex > li:not(:last-child) {
   margin-bottom: 20px;
@@ -78,9 +76,9 @@ form {
   max-width: 220px;
 }
 
-.form-flex > li > label + *
+.form-flex *
  {
-  flex: 1 0 210px;
+  flex: 1 0 210px;   /* flex shorthand */
 }
 
 .form-flex li select,
@@ -155,5 +153,6 @@ form {
 .flex-container a
 {
   color: black;
+  margin-left: -20px;
 
 }

@@ -180,5 +180,6 @@ form {
 .flex-container a
 {
   color: black;
+  margin-left: -30px;
 
 }
